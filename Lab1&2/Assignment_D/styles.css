@@ -1,0 +1,11 @@
+form {
+  font: 18px Georgia, serif;
+} 
+
+label {
+  color: blue;
+}
+
+.mandatory {
+  color: red;
+}
