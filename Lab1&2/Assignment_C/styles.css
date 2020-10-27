@@ -1,0 +1,22 @@
+header {
+  font: 25px Arial, sans-serif;
+} 
+
+
+p {
+  font: 18px Georgia, serif;
+}
+
+a {
+  text-decoration:none;
+}
+
+ul {
+  list-style-type: square;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
