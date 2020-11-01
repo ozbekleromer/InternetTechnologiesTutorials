@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@500&display=swap');
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header>img {
+  border-radius: 10%;
+  transform: rotate(3deg);
+  border-right: 3px solid #999894;
+  border-bottom: 3px solid #999894;
+  max-width: 540px;
+  width: 100%;
+  /* you can use % */
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 200%;
+}
+
+img {
+  width: 400px;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container>.gallery {
+  width: 400px;
+  margin: 10px;
+}
+
+.text-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 10px;
+  font-family: 'Lato', sans-serif;
+  align-items: flex-start
+}
+
+.text-box>span {
+  margin: 10px;
+  text-align: justify;
+  border: 1px solid black;
+  display: inline;
+  width: 100%;
+}
+
+.pquote {
+  float: right;
+  width: 40%;
+  background: #ddf;
+  font-weight: bold;
+  padding: 13px;
+  margin: 2% 0 2% 2%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.intext-img {
+  float: left;
+  width: 25%;
+  height: auto;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .text-box>span {
+    width: 47%;
+  }
+
+  .text-box :nth-child(1) {
+    order: 1;
+  }
+
+  .text-box :nth-child(2) {
+    order: 3;
+  }
+
+  .text-box :nth-child(3) {
+    order: 5;
+  }
+
+  .text-box :nth-child(4) {
+    order: 2;
+  }
+
+  .text-box :nth-child(5) {
+    order: 4;
+  }
+
+  .text-box :nth-child(6) {
+    order: 6;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .text-box>span {
+    width: 31%;
+  }
+
+  .text-box :nth-child(1) {
+    order: 1;
+  }
+
+  .text-box :nth-child(2) {
+    order: 4;
+  }
+
+  .text-box :nth-child(3) {
+    order: 2;
+  }
+
+  .text-box :nth-child(4) {
+    order: 5;
+  }
+
+  .text-box :nth-child(5) {
+    order: 3;
+  }
+
+  .text-box :nth-child(6) {
+    order: 6;
+  }
+}
+
+}
