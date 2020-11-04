@@ -46,7 +46,7 @@ img {
   align-items: flex-start
 }
 
-.text-box>span {
+.text-box>div {
   margin: 10px;
   text-align: justify;
   display: inline;
@@ -79,7 +79,7 @@ img {
 
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-  .text-box>span {
+  .text-box>div {
     width: 47%;
   }
 
@@ -109,7 +109,7 @@ img {
 }
 
 @media screen and (min-width: 1400px) {
-  .text-box>span {
+  .text-box>div {
     width: 31%;
   }
 
@@ -137,5 +137,4 @@ img {
     order: 6;
   }
 }
-
 }
