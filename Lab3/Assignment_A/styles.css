@@ -49,7 +49,6 @@ img {
 .text-box>span {
   margin: 10px;
   text-align: justify;
-  border: 1px solid black;
   display: inline;
   width: 100%;
 }
