@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@500&display=swap');
+
+header {
+  display: grid;
+  justify-content: space-evenly;
+}
+
+header>img {
+  border-radius: 10%;
+  transform: rotate(3deg);
+  border-right: 3px solid #999894;
+  border-bottom: 3px solid #999894;
+  max-width: 540px;
+  width: 100%;
+  /* you can use % */
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 200%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.grid-container>.gallery {
+  width: 400px;
+  margin: 10px;
+  grid-column: 1;
+}
+
+.text-box {
+  grid-column: 2;
+  -webkit-column-width: 400px;
+     -moz-column-width: 400px;
+          column-width: 400px;
+  margin: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.text-box>div {
+  margin: 10px;
+  text-align: justify;
+  display: inline;
+  width: 100%;
+}
+
+.pquote {
+  float: right;
+  width: 40%;
+  background: #ddf;
+  font-weight: bold;
+  padding: 13px;
+  margin: 2% 0 2% 2%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.intext-img {
+  float: left;
+  width: 25%;
+  height: auto;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .grid-container>.gallery {
+    width: auto;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .text-box {
+    grid-row: 2;
+    grid-column: 1;
+    
+  }
+}
