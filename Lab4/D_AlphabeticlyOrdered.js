@@ -1,5 +1,5 @@
 function ordered(str) {
-	if(typeof str != "string")	
+  if(typeof str != "string")	
   	return "ERROR - Input must string!"
   return str == str.split("").sort().join("");
 }
