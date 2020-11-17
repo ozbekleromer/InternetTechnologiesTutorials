@@ -1,0 +1,19 @@
+function binarySearch(n, arr) {
+  let start = 0;
+  let end = arr.length - 1;
+  let mid = Math.floor((start + end) / 2);
+  
+  while(start < end) {
+  	if(n > arr[mid]) start = mid + 1;
+  	else if(n < arr[mid]) end = mid - 1;
+    else return mid;
+    mid = Math.floor((start + end) / 2);
+  }
+  
+  return n === arr[mid] ? mid : "Element not found!";
+}
+
+console.log(binarySearch(5, [1, 2, 5, 10, 25]));
+console.log(binarySearch(23, [1, 2, 5, 10, 25]));
+console.log(binarySearch(1, [1, 2, 5, 10, 25]));
+console.log(binarySearch(25, [1, 2, 5, 10, 25]));
