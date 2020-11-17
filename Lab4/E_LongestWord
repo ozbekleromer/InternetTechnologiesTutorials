@@ -1,0 +1,12 @@
+function longestWord(str) {
+	if(typeof str != "string")	
+  	return "ERROR - Input must string!"
+  return str.split(" ")
+  					.sort((a, b) => b.length - a.length)[0];
+}
+
+console.log(longestWord());
+console.log(longestWord(""));
+console.log(longestWord(undefined));
+console.log(longestWord("Lorem Ipsum is simply dummy text of the printing and typesetting industry."));
+console.log(longestWord("Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."));
