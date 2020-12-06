@@ -1,0 +1,33 @@
+function Person(firstName, lastName, birthyear, gender) { 
+    this.firstName = firstName; 
+    this.lastName = lastName; 
+    this.birthyear = birthyear; 
+    this.gender = gender; 
+    
+    this.fullName = function() {
+    	return this.firstName + " " + this.lastName;
+    };
+    
+    this.getAge = function() {
+    	return new Date().getFullYear() - this.birthyear;
+    };
+ } 
+ 
+ function printObject(object) {
+		let msg = "";
+    for (let variable in object) {
+      msg +=	"Variable name: " + variable + "\n" +
+              "Variable value: " + object[variable] + "\n" +
+              "Variable type: " + typeof(object[variable]) + "\n" +
+              "-----------" + "\n";
+    }
+ 		console.log(msg);
+ }
+ 
+ var personOne = new Person("Ali", "Oz", 1978, "male"); 
+ var personTwo = new Person("Nur", "Oz", 1982, "female"); 
+ 
+ console.log(personOne.fullName() + "; " + personOne.getAge());
+ console.log(personTwo.fullName() + "; " + personTwo.getAge()); 
+ 
+ printObject(personOne);
