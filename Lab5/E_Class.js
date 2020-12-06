@@ -27,8 +27,8 @@ class Student {
 var studentOne = new Student("Ali", "Oz", "S19589", [3, 3.5, 4, 5, 3, 4.5]);
 var studentTwo = new Student("Nur", "Oz", "S19845", [4, 4.5, 4, 5, 3, 4.5]);
 
-console.log(studentOne.fullName + "; " + studentOne.average);
-console.log(studentTwo.fullName + "; " + studentTwo.average);
+console.log(studentOne.fullName + ": " + studentOne.average);
+console.log(studentTwo.fullName + ": " + studentTwo.average);
 studentOne.fullName = "Omer Ozbek";
-console.log(studentOne.fullName + "; " + studentOne.average);
-console.log(studentTwo.fullName + "; " + studentTwo.average);
+console.log(studentOne.fullName + ": " + studentOne.average);
+console.log(studentTwo.fullName + ": " + studentTwo.average);
