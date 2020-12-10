@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Task D</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      table {
+        width: 100%;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <form onsubmit="add2Table(); return false">
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="surname">Surname</label><br>
+      <input type="text" id="surname" name="surname" required><br><br>
+      <label for="age">Age</label><br>
+      <input type="number" id="age" name="age" required><br><br>
+      <input type="submit" value="Add"><br><br>
+    </form>
+
+    <table id="table">
+      <tr>
+        <th>Name</th>
+        <th>Surame</th>
+        <th>Age</th>
+      </tr>
+    </table>
+    <script src="d_index.js"></script>
+  </body>
+
+</html>
